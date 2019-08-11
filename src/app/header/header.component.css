@@ -1,0 +1,22 @@
+.header{
+  padding: 5px 20px;
+  background: royalblue;
+}
+
+.title{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.login,.register{
+  float: right;
+  text-decoration: none;
+  color: aliceblue;
+  padding-top: 10px;
+}
+
+.new-post{
+  float: right;
+  color: aliceblue;
+  padding-top: 10px;
+}

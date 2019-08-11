@@ -1,0 +1,11 @@
+.add-post-content{
+  padding-top: 20px;
+}
+
+.new-post-title{
+  color: royalblue;
+}
+
+.post-content, .post-title{
+  color: royalblue;
+}
