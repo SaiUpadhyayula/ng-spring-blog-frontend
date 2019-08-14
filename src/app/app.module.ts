@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { AddPostComponent } from './add-post/add-post.component';
 import {EditorModule} from '@tinymce/tinymce-angular';
 import {HttpClientInterceptor} from './http-client-interceptor';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {HttpClientInterceptor} from './http-client-interceptor';
     LoginComponent,
     RegisterSuccessComponent,
     HomeComponent,
-    AddPostComponent
+    AddPostComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,9 @@ import {HttpClientInterceptor} from './http-client-interceptor';
     ReactiveFormsModule,
     Ng2Webstorage.forRoot(),
     RouterModule.forRoot([
-      {path: 'register', component: RegisterComponent},
+      {path: '', component: HomeComponent},
+      {path: 'register  ', component: RegisterComponent},
+      {path: 'post/:id', component: PostComponent},
       {path: 'login', component: LoginComponent},
       {path: 'register-success', component: RegisterSuccessComponent},
       {path: 'home', component: HomeComponent},
