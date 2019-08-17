@@ -28,9 +28,12 @@ export class AuthService {
     }));
   }
 
-  isAuthenticated(): Boolean{
+  isAuthenticated(): boolean {
     return this.localStoraqeService.retrieve('username') != null;
   }
 
-
+  logout() {
+    this.localStoraqeService.clear('authenticationToken');
+    this.localStoraqeService.clear('username');
+  }
 }
